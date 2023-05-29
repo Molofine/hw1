@@ -77,8 +77,8 @@ function onDBJson(json) {
 
         desc.textContent = json[i].info.description;
         alt_desc.textContent = json[i].info.alt_description;
-        author.textContent = "Uploaded by: " + json[i].info.author;
-        created.textContent = "Uploaded at: " + json[i].info.created;
+        author.textContent = json[i].info.author;
+        created.textContent = json[i].info.created;
         
         const cover = document.createElement('div');
         cover.classList.add('photo');
