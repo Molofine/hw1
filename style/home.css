@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background: #973b11;
+    background: linear-gradient(0deg, #973b11 0%, #f16f33 100%);
+    color: #353535;
+    font-size: large;
+    font-family: 'Open Sans', Helvetica;
+    font-weight: bold;
+}
+
+#logo {
+    margin-top: 12px;
+    width: 5%;
+    background-color: #353535;
+    border-radius: 90px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #f16f33;
+}
+
+nav div {
+    display: flex;
+    align-items: start;
+}
+
+nav {
+    background-color: #353535;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+div a {
+    margin: 15px;
+    border-radius: 90px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 90%;
+    background-image: url(https://img3.wallspic.com/crops/1/2/9/6/26921/26921-lexus-infiniti-family_car-light-auto_detailing-1920x1080.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -2;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+h1 {
+    color: #f16f33;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #f16f33;
+    border-radius: 15px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section a {
+    color: #353535;
+}
+
+section div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+#arrow {
+    width: 10%;
+    border-radius: 90px;
+}
+
+h3 {
+    padding: 5px;
+    width: 85%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #353535;
+    background-color: #8b3710;
+    padding: 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+}
+
+footer div img{
+    width: 100%;
+}
+
+footer a, span {
+    color: black;
+}
+
+footer a:hover {
+    color: #353535;
+}
+
+strong, a {
+    color: #f16f33;
+}
+
+a:hover {
+    color: #994118;
+}
+
+#info {
+    width: 70%;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #353535;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+#sidebar-icon {
+    height: 50px;
+}
+
+#sidebar-icon.hidden, #sidebar.hidden {
+    display: none;
+}
+
+#contatti {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 500px) {
+
+    body {
+        font-size: small;
+    }
+
+    #logo, #menù {
+        display: none;
+    }
+
+    section {
+        flex-direction: column
+    }
+
+    #sidebar-icon.hidden {
+        display: block;
+    }
+}

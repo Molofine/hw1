@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #973b11;
+    background: linear-gradient(0deg, #973b11 0%, #f16f33 100%);
+    color: #353535;
+    font-size: large;
+    font-family: 'Open Sans', Helvetica;
+    font-weight: bold;
+}
+
+#logo {
+    width: 20%;
+    background-color: #353535;
+    border-radius: 90px;
+    padding: 10px;
+}
+
+main {
+    background: #af572e;
+    background: linear-gradient(0deg, #af572e 0%, #fc8d5a 100%);
+    border: 3px solid #353535;
+    border-radius: 30px;
+    margin: 3% 15% 3% 15%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 80%;
+}
+
+label {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+input {
+    border: 3px solid #353535;
+    border-radius: 60px;
+    color: #353535;
+    background-color: transparent;
+}
+
+#submit {
+    justify-content: center;
+    padding: 10px;
+}
+
+input[type=submit] {
+    width: 70%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #aa4618;
+    background-color: #353535;
+}
+
+input[type=text], input[type=password] {
+    padding: 5px;
+    width: 60%;
+    font-size: medium;
+}
+
+#check {
+    justify-content: start;
+}
+
+#check input[type=checkbox] {
+    margin-right: 10px;
+}
+
+a {
+    color: #353535;
+    cursor: pointer;
+
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    text-align: left;
+    height: 5%;
+    color: #8b0000;
+}
+
+span {
+    margin-left: 5px;
+    color: #353535;
+}
+
+em {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.6em;
+}
+
+#check {
+    margin: 15px 0 15px 0;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: small;
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        font-size: small;
+    }
+
+    main {
+        margin: 3% 7% 3% 7%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type=text], input[type=password] {
+        padding: 5px;
+        width: 50%;
+        font-size: medium;
+    }
+}

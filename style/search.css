@@ -1,0 +1,176 @@
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 2em;
+}
+
+input {
+    margin: 10px;
+    border: 3px solid #353535;
+    border-radius: 60px;
+    color: #353535;
+    background-color: transparent;
+}
+
+input[type=submit] {
+    width: 40%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #aa4618;
+    background-color: #353535;
+}
+
+input[type=text] {
+    padding: 5px;
+    width: 60%;
+    height: 10%;
+    font-size: medium;
+}
+
+input[type=file] {
+    padding: 5px;
+    width: 60%;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    color: #353535;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background-color: #353535;
+    color: #f16f33;
+  }
+
+#album {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    padding: 5%;
+}
+
+.nessunRisultato {
+    width: 100%;
+    font-size: 3em;
+    height: 200px;
+    justify-content: center;
+}
+
+.photo {
+    width: 32.5%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.image {
+    width: 100%;
+    border: 3px solid #353535;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.star {
+    width: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center; 
+}
+
+h4 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h6 {
+    text-align: center;
+    font-size: 1em;
+}
+
+#modal img {
+	height: 85%;
+    border: 3px solid #353535;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+article {
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+.error {
+    text-align: left;
+    color: #8b0000;
+}
+
+#preview-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+#preview {
+    height: 100%;
+    border: 3px solid #353535;
+    max-width: 100%
+}
+
+#preview-box.hidden, #modal.hidden {
+    display: none;
+}
+
+.italic {
+    font-style: italic;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.dark {
+    color: #202020;
+}
+
+@media (max-width: 800px) {
+    .photo {
+        width: calc(50% - 15px);    
+    }
+
+    #preview-box {
+        width: 90%;
+    }
+}
