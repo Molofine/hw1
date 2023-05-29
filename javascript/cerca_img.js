@@ -49,11 +49,6 @@ function onResponse(response){
 function onDBJson(json) {
     console.log(json);
 
-    if (json.total === 0) {
-        noResults(); 
-        return;
-    }
-
     for(let i=0; i < json.length; i++) {
         const image = document.createElement('img');
         image.classList.add('image');
@@ -101,6 +96,11 @@ function onDBJson(json) {
 
 function onImgJson(json) {
     console.log(json);
+
+    if (json.total === 0) {
+        noResults(); 
+        return;
+    }
 
     for(let i=0; i < json.results.length; i++) {
         const image = document.createElement('img');
