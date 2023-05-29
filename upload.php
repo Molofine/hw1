@@ -9,7 +9,6 @@
     $invalid = array();
     $misses = array();
     $error = array();
-    $success = array();
 
     $refresh = isset($_SERVER['HTTP_CACHE_CONTROL']) && $_SERVER['HTTP_CACHE_CONTROL'] === 'max-age=0';
 
@@ -46,7 +45,7 @@
 
             $query = "INSERT INTO uploads(username, destination, descrip, alt_desc, created) VALUES('$username','$root', '$desc','$alt_desc', '$created')";
             $res = mysqli_query($conn, $query) or die(mysqli_error($conn));
-            array_push($success, "foto");
+            header('Location: home.php');
         }
 
     } else {
@@ -159,7 +158,6 @@
             else if(in_array("foto", $invalid)) echo "<h4>Formato della foto non valido</h4>";
             else if(in_array("foto", $misses)) echo "<h4>Foto mancante</h4>";
             else if(in_array("description", $misses)) echo "<h4>Descrizione mancante</h4>";
-            else if(in_array("foto", $success)) echo "<h4>Foto caricata correttamente</h4>"
         ?>
 
         <footer>
